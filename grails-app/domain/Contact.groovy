@@ -5,4 +5,5 @@ class Contact {
         name nullable:false
         phoneNumber nullable: false
     }
+
 }

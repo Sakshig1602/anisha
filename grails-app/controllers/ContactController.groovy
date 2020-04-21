@@ -1,12 +1,16 @@
-import org.springframework.beans.factory.annotation.Autowired
+import org.hibernate.Transaction
 
+import javax.transaction.Transactional
+
+@Transactional
 class ContactController {
 
         def index = {
             redirect action: "list"
         }
         def create = {}
-        def save = {
+
+    def save = {
             def contact = new Contact(params)
             contact.save flush: true, failOnError: true
             redirect action: "show", id: contact.id
