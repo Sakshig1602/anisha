@@ -1,0 +1,6 @@
+#Tue, 21 Apr 2020 17:12:42 +0530
+
+info.app.version=0.1
+info.app.name=myapp
+grails.env=production
+info.app.grailsVersion=4.0.3
